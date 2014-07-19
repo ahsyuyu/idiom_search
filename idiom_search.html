@@ -1,0 +1,19 @@
+﻿<html>
+<script src="data1.js"></script>
+<script src="search.js"></script>
+<script src="ui.js"></script>
+
+<style>
+	r.red{color:red;}
+</style>
+
+<body>
+	<input id="tofind" value="無"></input>
+	<a href="#" onclick="dosearch(this.innerHTML)">花</a>
+	<a href="#" onclick="dosearch(this.innerHTML)">[鼠牛虎兔龍蛇馬羊猴雞狗豬]</a>
+	<a href="#" onclick="dosearch(this.innerHTML)">(.)\1</a>
+	<a href="#" onclick="dosearch(this.innerHTML)">(.).\1.</a>
+	<button onclick="dosearch(tofind.value)">Search</button>
+	<div id="result"></div>
+</body>
+</html>
