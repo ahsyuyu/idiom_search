@@ -6,4 +6,5 @@ var dosearch=function(tofind){
 	//var tofind=document.getElementById("tofind").value;
 	var arr=search(tofind);
 	document.getElementById("result").innerHTML=arr.map(showidiom).join("<br>");
+	document.getElementById("result_num").innerHTML=arr.length+" results";
 }

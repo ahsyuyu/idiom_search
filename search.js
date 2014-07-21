@@ -11,7 +11,6 @@ var search=function(tofind){
 			//out.replace(searchword_re, changecolor(searchword) );
 		}
 	}
-
 	return out;
 }
 
