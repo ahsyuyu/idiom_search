@@ -1,6 +1,5 @@
 var glob=require("glob");
 var fs=require("fs");
-var out=[];
 
 var processFile=function(fn){
 	var lines=fs.readFileSync(fn,"utf8").split("\n");
@@ -8,6 +7,8 @@ var processFile=function(fn){
 	var def="釋義&nbsp;";
 	var zu="注音&nbsp;";
 	var han="漢語拼音&nbsp;";
+	var out=[];
+
 
 	for (var i=200;i<lines.length;i++){
 		var line=lines[i];

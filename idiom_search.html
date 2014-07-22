@@ -3,20 +3,23 @@
 <script src="search.js"></script>
 <script src="ui.js"></script>
 
-<style>
-	r.red{color:red;}
-</style>
+<head>
+<link rel="stylesheet" href="idiom_search.css"></link>
+</head>
 
 <body>
-	<input id="tofind" value="無"></input>
+	<IMG SRC="123_03.png" width="50%"><br>
+	<input oninput="dosearch(tofind.value)" size="8" id="tofind" value="無"></input>
 	<button onclick="dosearch(tofind.value)">Search idioms</button>
 	<button onclick="dosearch_def(tofind.value)">Search definition</button>
 	<a href="#" onclick="dosearch(this.innerHTML)">花</a>
-	<a href="#" onclick="dosearch(this.innerHTML)">[鼠牛虎兔龍蛇馬羊猴雞狗豬]</a>
-	疊字搜尋<a href="#" onclick="dosearch(this.innerHTML)">(.)\1</a>
+	<a href="#" onclick="dosearch('[鼠牛虎兔龍蛇馬羊猴雞狗豬]')">十二生肖</a>
+	<a href="#" onclick="dosearch('(.)\1')">疊字搜尋</a>
 	兩組疊字搜尋<a href="#" onclick="dosearch(this.innerHTML)">(.)\1</a>
 	重複字搜尋<a href="#" onclick="dosearch(this.innerHTML)">(.).\1.</a>
 	<br><span id= "result_num"></span>
 	<br><div id="result"></div>
+	<IMG SRC="team.png" width="50%"><br>
 </body>
 </html>
+

@@ -1,5 +1,5 @@
 var showidiom=function(idiom){
-	return "<b>"+idiom.key+"</b>："+"「"+idiom.zu+"」"+"("+idiom.han+")"+idiom.def;
+	return '<span class="key">'+idiom.key+"</span>："+"「"+idiom.zu+"」"+"("+idiom.han+")"+idiom.def;
 }
 
 var dosearch=function(tofind){

@@ -1,7 +1,12 @@
 var search=function(tofind){
 	var out=[];
 	//var searchword="tofind";
-	var searchword=new RegExp(tofind,"g");
+	if (tofind.indexOf(".")>-1){
+		searchword=tofind.replace(0,"");
+		searchword=searchword.replace(searchword.length-1,"");
+	} else {var searchword=new RegExp(tofind,"g");}
+
+	//var searchword=new RegExp(tofind,"g");
 
 	for(var i=0;i<idioms.length;i++){
 		var find=idioms[i].key.match(searchword);
@@ -32,6 +37,8 @@ var search_def=function(tofind){
 
 var changecolor=function(input){
 
-	//return "X"+input;
-	return "<FONT COLOR='red'>"+input+"</FONT>"
+	/*document.getElementById("change").innerHTML=input;
+	var color=document.getElementById("change").innerHTML;
+	return color;*/
+	return '<span class="tofind">'+input+"</span>"
 }
