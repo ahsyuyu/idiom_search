@@ -1,4 +1,6 @@
 #result_num {background-color: yellow}
 .tofind {color:blue;}
-.key {font-weight:bold;}
+.key {font-weight:bold;text-decoration:underline;}
+.def{color: }
 body,input {font-size: 200%}
+button {font-size: 150%}

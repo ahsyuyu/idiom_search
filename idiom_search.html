@@ -1,4 +1,4 @@
-﻿<html>
+﻿<html manifest="offline.appcache" >
 <script src="data1.js"></script>
 <script src="search.js"></script>
 <script src="ui.js"></script>
@@ -8,10 +8,10 @@
 </head>
 
 <body>
-	<IMG SRC="123_03.png" width="50%"><br>
-	<input oninput="dosearch(tofind.value)" size="8" id="tofind" value="無"></input>
+	<IMG SRC="123_03.png" width="70%"><br>
+	<input oninput="dosearch(tofind.value)" size="10" id="tofind" value="無"></input><br>
 	<button onclick="dosearch(tofind.value)">Search idioms</button>
-	<button onclick="dosearch_def(tofind.value)">Search definition</button>
+	<button onclick="dosearch_def(tofind.value)">Search definition</button><br>
 	<a href="#" onclick="dosearch(this.innerHTML)">花</a>
 	<a href="#" onclick="dosearch('[鼠牛虎兔龍蛇馬羊猴雞狗豬]')">十二生肖</a>
 	<a href="#" onclick="dosearch('(.)\1')">疊字搜尋</a>
@@ -19,7 +19,8 @@
 	重複字搜尋<a href="#" onclick="dosearch(this.innerHTML)">(.).\1.</a>
 	<br><span id= "result_num"></span>
 	<br><div id="result"></div>
-	<IMG SRC="team.png" width="50%"><br>
+	
+	<IMG SRC="team.png" width="70%"><br>
 </body>
 </html>
 
