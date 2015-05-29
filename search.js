@@ -7,7 +7,7 @@ var search=function(tofind,field){
 
 	for(var i=0;i<idioms.length;i++){
 		var find=idioms[i][field].match(searchword);
-		var res={key: idioms[i].key, def:idioms[i].def};
+		var res={key: idioms[i].key, def:idioms[i].def, zu:idioms[i].zu, han:idioms[i].han};
 		if(find){
 			res[field]=idioms[i][field].replace(searchword,changecolor);
 			//idioms[i][field]=idioms[i][field].replace(searchword,changecolor);
